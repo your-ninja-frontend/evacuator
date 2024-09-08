@@ -1,0 +1,62 @@
+.callboard {
+	padding-bottom: 80px;
+	background-color: var(--light-blue);
+
+	&__banner {
+		margin-bottom: 50px;
+	}
+
+	&__title {
+		padding: 39px 20px;
+		text-align: center;
+		font-size: 25px;
+		font-weight: 700;
+		color: var(--white);
+	}
+
+	&__choose-place {
+		position: relative;
+		color: var(--blue-alt);
+		border-bottom: 3px solid var(--blue-alt);
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 44px;
+		margin-bottom: 60px;
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.callboard {
+		&__title {
+			font-size: 30px;
+		}
+	}
+}
+
+@media screen and (min-width: $laptop) {
+	.callboard {
+		&__title {
+			font-size: 40px;
+		}
+
+		&__banner {
+			margin-bottom: 94px;
+		}
+	}
+}
+
+@media screen and (min-width: $laptop-l) {
+	.callboard {
+		&__title {
+			font-size: 50px;
+		}
+
+		&__choose-place {
+			border-bottom-width: 4px;
+		}
+	}
+}

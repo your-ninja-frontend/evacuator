@@ -1,0 +1,52 @@
+.how-order {
+	margin-bottom: 69px;
+
+	&__wrapper {
+		margin-bottom: 30px;
+	}
+
+	&__info:not(:last-child) {
+		margin-bottom: 25px;
+	}
+
+	&__img {
+		max-width: 677px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.how-order {
+		&__info {
+			font-size: 26px;
+		}
+	}
+}
+
+@media screen and (min-width: $laptop) {
+	.how-order {
+		display: flex;
+		align-items: flex-start;
+		gap: 10px;
+
+		&__img {
+			width: 50%;
+		}
+
+		&__wrapper {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media screen and (min-width: $laptop-l) {
+	.how-order {
+		gap: 39px;
+	}
+}
+
+@media screen and (min-width: $desktop) {
+	.how-order {
+		padding-right: 246px;
+	}
+}

@@ -1,0 +1,30 @@
+// GLOBAL
+@import 'fonts/fonts';
+@import 'variables/variables';
+@import 'global/global';
+
+// UTILS
+@import 'utils/container';
+@import 'utils/visually-hidden';
+
+// UI
+@import 'ui/button';
+@import 'ui/button-menu';
+@import 'ui/pagination';
+@import 'ui/title';
+@import 'ui/swiper';
+
+// COMPONENTS
+@import 'components/header';
+@import 'components/logo';
+@import 'components/nav';
+@import 'components/banner';
+@import 'components/callboard';
+@import 'components/card';
+@import 'components/promo';
+@import 'components/how-order';
+@import 'components/what-know';
+@import 'components/services';
+@import 'components/advantages';
+@import 'components/evacuator-type';
+@import 'components/slider-evacuator';

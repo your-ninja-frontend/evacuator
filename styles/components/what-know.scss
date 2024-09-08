@@ -1,0 +1,53 @@
+.what-know {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: var(--sand);
+
+	&__block {
+		margin-bottom: 50px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__img {
+		width: 70%;
+		margin: 0 auto 32px;
+
+		&--1 {
+			max-width: 348px;
+			max-height: 297px;
+		}
+
+		&--2 {
+			max-width: 321px;
+			max-height: 289px;
+		}
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.what-know {
+		&__info {
+			font-size: 26px;
+		}
+	}
+}
+
+@media screen and (min-width: $laptop-l) {
+	.what-know {
+		padding-top: 100px;
+		padding-bottom: 100px;
+
+		&__wrapper {
+			display: flex;
+			gap: 40px;
+		}
+
+		&__block {
+			flex: 1 1 680px;
+			margin-bottom: 0;
+		}
+	}
+}

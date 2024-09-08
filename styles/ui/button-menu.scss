@@ -1,0 +1,47 @@
+.button-menu {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	z-index: 2;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: var(--blue);
+
+	&::after,
+	&::before {
+		content: '';
+		width: 80%;
+		height: 3px;
+		border-radius: 10px;
+		background-color: white;
+		transition: transform 0.2s linear;
+	}
+
+	&--active {
+		&::after,
+		&::before {
+			position: absolute;
+			width: 50%;
+		}
+
+		&::after {
+			transform: rotate(45deg);
+		}
+		&::before {
+			transform: rotate(-45deg);
+		}
+	}
+
+	@media screen and (min-width: $tablet) {
+		display: none;
+	}
+}

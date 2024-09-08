@@ -1,0 +1,28 @@
+.evacuator-type {
+	padding: 50px 0;
+	background-color: var(--light-blue);
+
+	&__info {
+		max-width: 1249px;
+		margin-bottom: 30px;
+
+		&--bold {
+			margin-bottom: 22px;
+			font-weight: 700;
+		}
+	}
+}
+
+@media screen and (min-width: $laptop) {
+	.evacuator-type {
+		&__info {
+			font-size: 26px;
+		}
+	}
+}
+
+@media screen and (min-width: $desktop) {
+	.evacuator-type {
+		padding: 263px 0 100px;
+	}
+}

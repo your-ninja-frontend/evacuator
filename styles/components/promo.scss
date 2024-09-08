@@ -1,0 +1,60 @@
+.promo {
+	margin-bottom: 50px;
+	padding: 9px 0;
+
+	&__img {
+		width: 150px;
+		margin: 0 auto 10px;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		font-size: 20px;
+		font-weight: 700;
+		text-align: center;
+		color: var(--white);
+	}
+
+	&__button {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: $laptop) {
+	.promo {
+		margin-bottom: 98px;
+
+		&__wrapper {
+			display: flex;
+			align-items: center;
+			gap: 36px;
+		}
+
+		&__img {
+			width: 200px;
+			margin: 0;
+		}
+
+		&__title {
+			margin-bottom: 0;
+			font-size: 30px;
+		}
+
+		&__button {
+			margin: 0;
+			margin-left: auto;
+		}
+	}
+}
+
+@media screen and (min-width: $laptop-l) {
+	.promo {
+		&__title {
+			font-size: 40px;
+		}
+
+		&__img {
+			width: 210px;
+		}
+	}
+}

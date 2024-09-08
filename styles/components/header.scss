@@ -1,0 +1,56 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.header__menu {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 15px;
+
+	@media screen and (max-width: $mobail-max) {
+		position: absolute;
+		top: -300px;
+		right: 0;
+
+		flex-direction: column;
+
+		padding: 90px 20px 50px;
+		border-bottom-left-radius: 50px;
+		background-color: var(--light-blue);
+		transition: all 0.3s linear;
+
+		&--active {
+			top: 0;
+			z-index: 1;
+		}
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.header {
+		padding-top: 22px;
+		padding-bottom: 22px;
+	}
+}
+
+@media screen and (min-width: $laptop) {
+	.header {
+		&__menu {
+			gap: 135px;
+		}
+	}
+}
+
+@media screen and (min-width: $laptop-l) {
+	.header {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+}

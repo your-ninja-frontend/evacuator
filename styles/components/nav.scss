@@ -1,0 +1,33 @@
+.nav {
+	text-align: center;
+	text-transform: uppercase;
+
+	&__item {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.nav {
+		text-align: start;
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 15px;
+		}
+
+		&__item {
+			flex-shrink: 0;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (min-width: $laptop) {
+	.nav {
+		&__list {
+			gap: 78px;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.title {
+	margin-bottom: 28px;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+@media screen and (min-width: $tablet) {
+	.title {
+		margin-bottom: 48px;
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: $laptop-l) {
+	.title {
+		font-size: 40px;
+	}
+}
