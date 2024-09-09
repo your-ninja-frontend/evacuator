@@ -28,18 +28,6 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
-
-		&::before {
-			content: '';
-			flex-shrink: 0;
-			display: block;
-			width: 32px;
-			height: 32px;
-			background-image: url('/check.svg');
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: contain;
-		}
 	}
 
 	&__img {

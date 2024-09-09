@@ -1,0 +1,131 @@
+.final-info {
+	padding: 50px 0;
+	background-color: var(--light-blue);
+
+	&__wrapper {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+
+	&__tab-info {
+		display: none;
+		padding: 20px;
+		border-radius: 20px;
+		background-color: var(--white);
+		box-shadow: 2px 2px 10px 2px rgba(39, 52, 58, 0.15);
+
+		&.active {
+			display: block;
+		}
+	}
+
+	&__tab-btn {
+		position: relative;
+		padding: 20px;
+		font-size: 20px;
+
+		&.active {
+			border-radius: 20px 20px 0 0;
+			background-color: var(--white);
+			box-shadow: 2px 2px 10px 2px rgba(39, 52, 58, 0.15);
+
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -17px;
+				display: block;
+				width: 100%;
+				height: 20px;
+				background-color: var(--white);
+			}
+		}
+	}
+
+	&__info {
+		margin-bottom: 35px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&--bold {
+			margin-bottom: 28px;
+			font-weight: 700;
+		}
+	}
+
+	&__list {
+		margin-bottom: 28px;
+	}
+
+	&__list-item {
+		margin-bottom: 16px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__list-num {
+		counter-reset: count;
+
+		&-item {
+			display: flex;
+			gap: 16px;
+			margin-bottom: 24px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&::before {
+				counter-increment: count;
+				content: counter(count);
+				flex-shrink: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 32px;
+				height: 32px;
+
+				border: 3px solid var(--blue);
+				border-radius: 50%;
+				color: var(--blue);
+
+				font-size: 22px;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.final-info {
+		font-size: 26px;
+
+		&__tab-info {
+			padding: 40px;
+		}
+
+		&__tab-btn {
+			padding-left: 52px;
+			padding-right: 52px;
+			font-size: 32px;
+		}
+
+		&__title {
+			margin-bottom: 32px;
+		}
+	}
+}
+
+@media screen and (min-width: $laptop) {
+	.final-info {
+		padding: 100px 0;
+
+		&__tab-info {
+			padding: 48px 60px 60px;
+		}
+	}
+}

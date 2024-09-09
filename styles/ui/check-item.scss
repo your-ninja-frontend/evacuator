@@ -1,0 +1,16 @@
+.check-item {
+	display: flex;
+	gap: 16px;
+
+	&::before {
+		content: '';
+		flex-shrink: 0;
+		display: block;
+		width: 32px;
+		height: 32px;
+		background-image: url('/check.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+}

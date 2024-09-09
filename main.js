@@ -48,3 +48,20 @@ const swiper = new Swiper('.swiper', {
 		},
 	},
 })
+
+const tabsBtns = document.querySelectorAll('.final-info__tab-btn')
+const tabsBlocks = document.querySelectorAll('.final-info__tab-info')
+
+const handleTab = e => {
+	tabsBtns.forEach((el, i) => {
+		if (e.target === el) {
+			el.classList.add('active')
+			tabsBlocks[i].classList.add('active')
+		} else {
+			el.classList.remove('active')
+			tabsBlocks[i].classList.remove('active')
+		}
+	})
+}
+
+tabsBtns.forEach(el => el.addEventListener('click', handleTab))
