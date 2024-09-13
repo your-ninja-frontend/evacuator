@@ -1,4 +1,22 @@
 .form {
 	max-width: 798px;
 	margin: 0 auto;
+
+	&__label {
+		display: block;
+		margin-bottom: 12px;
+		color: var(--gray-text);
+	}
+
+	&__input {
+		margin-bottom: 28px;
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.form {
+		&__label {
+			font-size: 22px;
+		}
+	}
 }

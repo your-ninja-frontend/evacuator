@@ -1,0 +1,17 @@
+.input {
+	width: 100%;
+	padding: 12px 24px 13px;
+
+	border: 1px solid var(--blue);
+	border-radius: 10px;
+
+	&::placeholder {
+		color: var(--gray-alt);
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.input {
+		font-size: 26px;
+	}
+}
