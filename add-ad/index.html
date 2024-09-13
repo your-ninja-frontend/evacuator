@@ -5,43 +5,142 @@
 		<link
 			rel="icon"
 			type="image/svg+xml"
-			href="/Logo.svg"
+			href="/logo.svg"
 		/>
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Evacuator</title>
+		<title>ТутЭвакуатор</title>
 	</head>
 	<body>
-		<header>
+		<header class="header container">
 			<a
 				href="#"
 				class="logo"
 			>
 				<img
-					src="/Logo.svg"
-					alt=""
+					src="/logo.svg"
+					alt="Изображение логотипа"
 					class="logo__img"
+					width="84"
+					height="84"
 				/>
 			</a>
-			<nav>
-				<ul>
-					<li>
-						<a href="">О проекте</a>
-					</li>
-					<li>
-						<a href="">Контакты</a>
-					</li>
-				</ul>
-			</nav>
+			<button class="button-menu"></button>
+			<div class="header__menu">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a
+								class="nav__link"
+								href="#"
+								>О проекте</a
+							>
+						</li>
+						<li class="nav__item">
+							<a
+								class="nav__link"
+								href="#"
+								>Контакты</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<a
+					class="button"
+					href="/add-ad/"
+					>Добавить объявление</a
+				>
+			</div>
 		</header>
-		<main>
-			<h1 class="title">gergwergwgd</h1>
+		<main class="add-ad">
+			<section>
+				<div class="add-ad__banner banner">
+					<h1 class="add-ad__title">Создание объявления</h1>
+				</div>
+				<div class="add-ad__form container">
+					<div class="add-ad__info">
+						<p class="add-ad__description">
+							Заполните все поля формы на размещение своего объявления на сайте.
+							<br />
+							Размещение объявления платное. Стоимость за одно объявление
+							составляет
+							<span class="add-ad__description--bold">990 руб.</span>
+							<br />
+							Объявление будет опубликовано на сайте после оплаты и проверки
+							модератором.
+						</p>
+					</div>
+					<form
+						class="form"
+						action=""
+					></form>
+				</div>
+			</section>
 		</main>
+		<footer class="footer">
+			<div class="footer__wrapper container">
+				<a
+					href="#"
+					class="logo"
+				>
+					<img
+						src="/logo.svg"
+						alt="Изображение логотипа"
+						class="logo__img"
+						width="84"
+						height="84"
+					/>
+				</a>
+				<nav class="footer__nav">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a
+								class="footer__link"
+								href="#"
+								>Вызвать эвакуатор</a
+							>
+						</li>
+						<li class="footer__item">
+							<a
+								class="footer__link"
+								href="#"
+								>Добавить эвакуатор на сайт</a
+							>
+						</li>
+						<li class="footer__item">
+							<a
+								class="footer__link"
+								href="#"
+								>Помощь</a
+							>
+						</li>
+						<li class="footer__item">
+							<a
+								class="footer__link"
+								href="#"
+								>Правила оплаты</a
+							>
+						</li>
+						<li class="footer__item">
+							<a
+								class="footer__link"
+								href="#"
+								>Защита персональных данных</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
 		<script
 			type="module"
 			src="/main.js"
+		></script>
+		<script
+			type="module"
+			src="/add-ad/add-ad.js"
 		></script>
 	</body>
 </html>
