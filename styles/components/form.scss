@@ -1,22 +1,86 @@
 .form {
-	max-width: 798px;
 	margin: 0 auto;
+
+	color: var(--gray-text);
 
 	&__label {
 		display: block;
 		margin-bottom: 12px;
-		color: var(--gray-text);
+		cursor: pointer;
 	}
 
 	&__input {
 		margin-bottom: 28px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&-price {
+			max-width: 322px;
+			margin-bottom: 0;
+		}
+	}
+
+	&__fieldset {
+		margin-bottom: 53px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&-container {
+			max-width: 798px;
+			margin: 0 auto;
+		}
+	}
+
+	&__legend {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		width: 100%;
+		margin-bottom: 33px;
+
+		font-size: 26px;
+		text-transform: uppercase;
+		text-align: center;
+
+		&::after,
+		&::before {
+			content: '';
+			width: 100%;
+			height: 1px;
+			background-color: var(--blue);
+		}
+	}
+
+	&__texarea {
+		display: block;
+		resize: none;
+	}
+
+	&__input-with-checkbox {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	&__price-wrapper {
+		display: flex;
+		align-items: center;
+		gap: 16px;
 	}
 }
 
 @media screen and (min-width: $tablet) {
 	.form {
-		&__label {
-			font-size: 22px;
+		font-size: 22px;
+
+		&__legend {
+			margin-bottom: 53px;
 		}
 	}
 }

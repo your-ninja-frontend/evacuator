@@ -76,63 +76,134 @@
 						class="form"
 						action="#"
 					>
-						<fieldset>
-							<label
-								class="form__label"
-								for="form-name"
-								>Ваше имя</label
-							>
-							<input
-								class="form__input input"
-								id="form-name"
-								type="text"
-							/>
-							<label
-								class="form__label"
-								for="form-tel"
-								>Номер мобильного телефона</label
-							>
-							<input
-								class="form__input input"
-								id="form-tel"
-								type="tel"
-								placeholder="+7 (999) 999 99 99"
-							/>
-							<label
-								class="form__label"
-								for="form-tel-alt"
-								>Номер городского телефона</label
-							>
-							<input
-								class="form__input input"
-								id="form-tel-alt"
-								type="tel"
-								placeholder="+7 (999) 999 99 99"
-							/>
-							<label
-								class="form__label"
-								for="form-email"
-								>Ваш email</label
-							>
-							<input
-								class="form__input input"
-								id="form-email"
-								type="email"
-								placeholder="example@gmail.com"
-							/>
-							<label
-								class="form__label"
-								for="form-address"
-								>Адрес стоянки эвакуатора</label
-							>
-							<input
-								class="form__input input"
-								id="form-address"
-								type="text"
-							/>
+						<fieldset class="form__fieldset">
+							<div class="form__fieldset-container">
+								<label
+									class="form__label"
+									for="form-city"
+									>Выберете город</label
+								>
+								<select
+									name=""
+									id="form-city"
+								>
+									<option value="moscow">Москва</option>
+								</select>
+								<label
+									class="form__label"
+									for="form-name"
+									>Ваше имя</label
+								>
+								<input
+									class="form__input input"
+									id="form-name"
+									type="text"
+								/>
+								<label
+									class="form__label"
+									for="form-tel"
+									>Номер мобильного телефона</label
+								>
+								<input
+									class="form__input input"
+									id="form-tel"
+									type="tel"
+									placeholder="+7 (999) 999 99 99"
+								/>
+								<label
+									class="form__label"
+									for="form-tel-alt"
+									>Номер городского телефона</label
+								>
+								<input
+									class="form__input input"
+									id="form-tel-alt"
+									type="tel"
+									placeholder="+7 (999) 999 99 99"
+								/>
+								<label
+									class="form__label"
+									for="form-email"
+									>Ваш email</label
+								>
+								<input
+									class="form__input input"
+									id="form-email"
+									type="email"
+									placeholder="example@gmail.com"
+								/>
+								<label
+									class="form__label"
+									for="form-address"
+									>Адрес стоянки эвакуатора</label
+								>
+								<input
+									class="form__input input"
+									id="form-address"
+									type="text"
+								/>
+							</div>
 						</fieldset>
-						<fieldset>
-							<legend>Информация</legend>
+						<fieldset class="form__fieldset">
+							<legend class="form__legend">Информация</legend>
+							<div class="form__fieldset-container">
+								<label
+									class="form__label"
+									for="from-title"
+									>Заголовок объявления</label
+								>
+								<input
+									class="form__input input"
+									id="from-title"
+									type="text"
+									maxlength="50"
+									placeholder="Не более 50 символов"
+								/>
+								<label
+									class="form__label"
+									for="form-texarea"
+									>Описание объявления</label
+								>
+								<textarea
+									class="form__texarea form__input input"
+									name="form-texarea"
+									id="form-texarea"
+									maxlength="50"
+									placeholder="Не более 50 символов"
+								></textarea>
+							</div>
+						</fieldset>
+						<fieldset class="form__fieldset">
+							<legend class="form__legend">ЦЕНЫ</legend>
+							<div class="form__fieldset-container">
+								<label
+									class="form__label"
+									for="passenger-car"
+									>Легковые автомобили</label
+								>
+								<div class="form__input-with-checkbox">
+									<div class="form__price-wrapper">
+										<input
+											class="form__input form__input-price input"
+											id="passenger-car"
+											type="number"
+										/>
+										<span>рублей</span>
+									</div>
+									<input
+										class="checkbox__input visually-hidden"
+										type="checkbox"
+										name="passenger-car-checkbox"
+										id="passenger-car-checkbox"
+									/>
+									<label
+										class="checkbox"
+										for="passenger-car-checkbox"
+									>
+										Услугу не оказываю
+									</label>
+								</div>
+							</div>
 						</fieldset>
 					</form>
 				</div>

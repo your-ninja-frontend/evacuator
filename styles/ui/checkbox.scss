@@ -1,0 +1,31 @@
+.checkbox {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	width: fit-content;
+	cursor: pointer;
+
+	&::before {
+		content: '';
+		width: 24px;
+		height: 24px;
+		border: 0.5px solid var(--blue);
+		border-radius: 4px;
+	}
+
+	&__input:checked + .checkbox {
+		&::after {
+			content: '';
+			position: absolute;
+			left: 4px;
+			width: 16px;
+			height: 11px;
+
+			background-image: url('/checkbox.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+	}
+}
