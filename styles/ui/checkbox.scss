@@ -1,23 +1,29 @@
 .checkbox {
 	position: relative;
-	display: flex;
-	align-items: center;
-	gap: 12px;
 	width: fit-content;
-	cursor: pointer;
 
-	&::before {
-		content: '';
-		width: 24px;
-		height: 24px;
-		border: 0.5px solid var(--blue);
-		border-radius: 4px;
+	&__label {
+		display: flex;
+		gap: 12px;
+		cursor: pointer;
+
+		&::before {
+			content: '';
+			flex-shrink: 0;
+			display: block;
+			margin-top: 1px;
+			width: 24px;
+			height: 24px;
+			border: 0.5px solid var(--blue);
+			border-radius: 4px;
+		}
 	}
 
-	&__input:checked + .checkbox {
+	&__input:checked + .checkbox__label {
 		&::after {
 			content: '';
 			position: absolute;
+			top: 8px;
 			left: 4px;
 			width: 16px;
 			height: 11px;

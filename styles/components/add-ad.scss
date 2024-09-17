@@ -1,4 +1,6 @@
 .add-ad {
+	background-color: var(--light-blue);
+
 	&__title {
 		padding: 39px 20px;
 		text-align: center;
@@ -36,6 +38,10 @@
 			font-weight: 700;
 		}
 	}
+
+	&__form {
+		margin-bottom: 40px;
+	}
 }
 
 @media screen and (min-width: $tablet) {
@@ -56,6 +62,10 @@
 		&__description {
 			font-size: 26px;
 		}
+
+		&__form {
+			margin-bottom: 60px;
+		}
 	}
 }
 
@@ -71,6 +81,10 @@
 
 		&__title {
 			font-size: 40px;
+		}
+
+		&__form {
+			margin-bottom: 80px;
 		}
 	}
 }

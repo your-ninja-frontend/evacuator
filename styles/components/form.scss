@@ -1,12 +1,15 @@
 .form {
 	margin: 0 auto;
-
 	color: var(--gray-text);
 
 	&__label {
 		display: block;
 		margin-bottom: 12px;
 		cursor: pointer;
+
+		&--upload {
+			cursor: auto;
+		}
 	}
 
 	&__input {
@@ -26,13 +29,13 @@
 		margin-bottom: 53px;
 
 		&:last-child {
-			margin-bottom: 0;
+			margin-bottom: 60px;
 		}
+	}
 
-		&-container {
-			max-width: 798px;
-			margin: 0 auto;
-		}
+	&__container {
+		max-width: 798px;
+		margin: 0 auto;
 	}
 
 	&__legend {
@@ -63,15 +66,26 @@
 
 	&__input-with-checkbox {
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 10px;
+		margin-bottom: 28px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	&__price-wrapper {
 		display: flex;
 		align-items: center;
 		gap: 16px;
+	}
+
+	&__upload-button {
+		font-size: 20px;
+		cursor: pointer;
 	}
 }
 

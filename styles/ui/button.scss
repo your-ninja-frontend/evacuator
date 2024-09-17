@@ -9,4 +9,12 @@
 	font-weight: 600;
 	color: var(--white);
 	background-color: var(--blue);
+
+	&--alt {
+		padding-top: 14px;
+		padding-bottom: 14px;
+		border: 2px solid var(--blue);
+		color: var(--blue);
+		background-color: transparent;
+	}
 }
