@@ -87,6 +87,14 @@
 		font-size: 20px;
 		cursor: pointer;
 	}
+
+	&__rules {
+		margin-bottom: 24px;
+	}
+
+	&__button {
+		margin: 0 auto;
+	}
 }
 
 @media screen and (min-width: $tablet) {
@@ -95,6 +103,10 @@
 
 		&__legend {
 			margin-bottom: 53px;
+		}
+
+		&__texarea {
+			min-height: 346px;
 		}
 	}
 }
