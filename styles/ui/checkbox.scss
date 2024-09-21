@@ -4,13 +4,15 @@
 
 	&__label {
 		display: flex;
+		align-items: center;
 		gap: 12px;
 		cursor: pointer;
 
 		&::before {
 			content: '';
-			flex-shrink: 0;
 			display: block;
+			flex-shrink: 0;
+			align-self: flex-start;
 			margin-top: 1px;
 			width: 24px;
 			height: 24px;
