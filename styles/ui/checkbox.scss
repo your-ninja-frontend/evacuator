@@ -3,17 +3,13 @@
 	width: fit-content;
 
 	&__label {
-		display: flex;
-		align-items: center;
-		gap: 12px;
+		padding-left: 36px;
 		cursor: pointer;
 
 		&::before {
 			content: '';
-			display: block;
-			flex-shrink: 0;
-			align-self: flex-start;
-			margin-top: 1px;
+			position: absolute;
+			left: 0;
 			width: 24px;
 			height: 24px;
 			border: 0.5px solid var(--blue);
@@ -30,10 +26,26 @@
 			width: 16px;
 			height: 11px;
 
-			background-image: url('checkbox.svg');
+			background-image: url('/checkbox.svg');
 			background-repeat: no-repeat;
 			background-size: contain;
 			background-position: center;
+		}
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.checkbox {
+		&__label {
+			&::before {
+				top: 4px;
+			}
+		}
+
+		&__input:checked + .checkbox__label {
+			&::after {
+				top: 11px;
+			}
 		}
 	}
 }

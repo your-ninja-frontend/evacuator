@@ -43,6 +43,7 @@ body {
 	grid-template-rows: min-content 1fr min-content;
 	min-width: $mobail;
 	min-height: 100%;
+	font-family: var(--base-font);
 	color: var(--black);
 	background-color: var(--white);
 }
@@ -51,6 +52,16 @@ img {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+ul,
+ol,
+dl,
+p,
+h1 {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
 }
 
 ul,

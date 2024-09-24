@@ -3,6 +3,8 @@
 	color: var(--gray-text);
 
 	&__select {
+		--bs-form-select-bg-img: url('/arrow-down.svg');
+		font: inherit;
 		line-height: normal;
 		cursor: pointer;
 
@@ -110,6 +112,10 @@
 @media screen and (min-width: $tablet) {
 	.form {
 		font-size: 22px;
+
+		&__select {
+			font-size: 26px;
+		}
 
 		&__legend {
 			margin-bottom: 53px;
