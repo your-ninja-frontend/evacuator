@@ -3,8 +3,13 @@
 	color: var(--gray-text);
 
 	&__select {
-		cursor: pointer;
 		line-height: normal;
+		cursor: pointer;
+
+		&:focus {
+			border-color: var(--blue);
+			box-shadow: none;
+		}
 	}
 
 	&__label {
