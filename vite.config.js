@@ -12,22 +12,22 @@ export default defineConfig({
 			},
 		},
 	},
-	// plugins: [
-	// 	ViteImageOptimizer({
-	// 		dir: 'public',
-	// 		outDir: 'dist',
-	// 		png: {
-	// 			quality: 80,
-	// 		},
-	// 		jpeg: {
-	// 			quality: 80,
-	// 		},
-	// 		jpg: {
-	// 			quality: 80,
-	// 		},
-	// 		webp: {
-	// 			lossless: true,
-	// 		},
-	// 	}),
-	// ],
+	plugins: [
+		ViteImageOptimizer({
+			dir: 'public',
+			outDir: 'dist',
+			png: {
+				quality: 80,
+			},
+			jpeg: {
+				quality: 80,
+			},
+			jpg: {
+				quality: 80,
+			},
+			webp: {
+				lossless: true,
+			},
+		}),
+	],
 })
